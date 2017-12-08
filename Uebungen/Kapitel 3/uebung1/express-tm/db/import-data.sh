@@ -1,0 +1,1 @@
+mongoimport --db express-tm --collection tasks --file tasks.json

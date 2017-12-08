@@ -1,0 +1,7 @@
+<form action="/tasks" method="post">
+  <input name="title" type="text" placeholder="Neue Aufgabe" autofocus>
+</form>
+<ul>
+  {{#each tasks}} {{> task this}} {{/each}}
+</ul>
+<script src="/js/tasks.js" defer></script>

@@ -1,0 +1,106 @@
+body {
+  margin: 0px;
+  font-family: sans-serif;
+  font-size: 100%;
+}
+
+header {
+  margin: 0px;
+  background-color: #0275d8;
+  color: white;
+}
+
+header h1 {
+  margin-top: 0px;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+main {
+  margin-top: 2.5rem;
+}
+
+form {
+  box-sizing: border-box;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+form input {
+  -webkit-appearance: none;
+  border: solid rgba(0, 0, 0, 0.125) 1px;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 100%;
+  outline: 0;
+}
+
+form input:focus {
+  border-color: #5cb3fd;
+}
+
+ul {
+  margin: 1.5rem;
+  padding-left: 0rem;
+}
+
+li {
+  list-style-type: none;
+  font-size: 1rem;
+  padding: 1rem;
+  border: solid rgba(0, 0, 0, 0.125) 1px;
+}
+
+li:first-child {
+  border-top-right-radius: .25rem;
+  border-top-left-radius: .25rem;
+}
+
+li:not(:first-child) {
+  border-top: none;
+}
+
+li:last-child {
+  border-bottom-right-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+}
+
+.task .remove-task {
+  display: none;
+}
+
+.task:hover .remove-task {
+  display: inline;
+  color: #800000;
+}
+
+.task[data-task-status="open"] .checked {
+  display: none;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+}
+
+.task .checked {
+  color: #008000;
+}
+
+.task-title {
+  margin-left: 0.75rem;
+}
+
+.toggle-task {
+  display: inline-flex;
+  flex-shrink: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 1px solid #888;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}

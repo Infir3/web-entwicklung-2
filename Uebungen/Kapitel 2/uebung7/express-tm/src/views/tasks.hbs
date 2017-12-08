@@ -1,0 +1,11 @@
+<ul>
+  {{#each tasks}}
+    {{> task this}}
+  {{/each}}
+</ul>
+
+<form method="post">
+  <p>Titel</p>
+  <input type="text" name="title">
+  <input type="submit" value="Submit">
+</form>
